@@ -1,5 +1,5 @@
 {% set name = "i18n" %}
-{% set version = "1.4.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: bb633854267df9de1c977c9a995764fdf674ab77f4dc87da48000d24523d113a
+  sha256: 941b77be3243ae41091349c0c598bc170ba4aeaf893b757b111a05933db5ddc1 
 
 build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
+    - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
   skip: {{ win }}
 
