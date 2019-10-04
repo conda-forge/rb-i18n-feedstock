@@ -1,5 +1,5 @@
 {% set name = "i18n" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: rb-{{ name|lower }}
