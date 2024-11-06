@@ -1,5 +1,5 @@
 {% set name = "i18n" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.2" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 14fadf992a1acd31eda538e0c3c26309d4df058beac4a9215980f998fabebe42 
+  sha256: 95cf147081cc6f1dbfb32a8f29a03afe8b0f4da6a300d37d34e0f74a6868994b 
 
 build:
   noarch: generic
